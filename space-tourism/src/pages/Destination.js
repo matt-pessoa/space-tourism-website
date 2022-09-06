@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../components/shared/Header';
-import data from '../data.json';
+import ChooseDestination from '../components/destination/ChooseDestination';
+import DestinationCard from '../components/destination/DestinationCard';
 
 function Destination(props) {
   const [destination, setDestination] = useState('Moon');
@@ -10,26 +11,11 @@ function Destination(props) {
     setDestination(elementName);
   };
 
-  console.log(destination);
-
   return (
     <div className='destination-page'>
       <Header />
-      <h1>01 PICK YOUR DESTINATION</h1>
-      <ul>
-        <li onClick={handleClick} title='Moon'>
-          MOON
-        </li>
-        <li onClick={handleClick} title='Mars'>
-          MARS
-        </li>
-        <li onClick={handleClick} title='Europa'>
-          EUROPA
-        </li>
-        <li onClick={handleClick} title='Titan'>
-          TITAN
-        </li>
-      </ul>
+      <ChooseDestination handleClick={handleClick} />
+      <DestinationCard destination={destination} />
     </div>
   );
 }
