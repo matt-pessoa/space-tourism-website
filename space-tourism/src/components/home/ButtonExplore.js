@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ButtonExplore(props) {
   return (
-    <button className='bellefair' type='button'>
+    <Link className='bellefair' to='/destination'>
       EXPLORE
-    </button>
+    </Link>
   );
 }
 
