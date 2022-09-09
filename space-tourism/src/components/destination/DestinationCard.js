@@ -14,16 +14,16 @@ function DestinationCard(props) {
   return (
     <div className='destination-card'>
       <img src={image.png} alt={destination.name} />
-      <h1 className='bellefair'>{destination.name.toUpperCase()}</h1>
-      <p className='barlow'>{destination.description}</p>
+      <h1>{destination.name.toUpperCase()}</h1>
+      <p>{destination.description}</p>
       <div className='stats'>
         <div className='avg-distance'>
-          <h2 className='barlow'>AVG. DISTANCE</h2>
-          <p className='bellefair'>{destination.distance.toUpperCase()}</p>
+          <h2>AVG. DISTANCE</h2>
+          <p>{destination.distance.toUpperCase()}</p>
         </div>
         <div className='est-travel-time'>
-          <h2 className='barlow'>EST. TRAVEL TIME</h2>
-          <p className='bellefair'>{destination.travel.toUpperCase()}</p>
+          <h2>EST. TRAVEL TIME</h2>
+          <p>{destination.travel.toUpperCase()}</p>
         </div>
       </div>
     </div>
