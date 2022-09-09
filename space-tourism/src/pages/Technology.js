@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../components/shared/Header';
 import TechnologyCard from '../components/technology/TechnologyCard';
-import TechnologyControllers from '../components/technology/TechnologyControllers';
 
 function Technology(props) {
   const [tech, setTech] = useState('Launch vehicle');

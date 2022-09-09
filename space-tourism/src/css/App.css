@@ -1,7 +1,13 @@
-.barlow {
-  font-family: 'Barlow Condensed', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bellefair', serif;
 }
 
-.bellefair {
-  font-family: 'Bellefair', serif;
+h5,
+nav,
+li,
+p {
+  font-family: 'Barlow Condensed', sans-serif;
 }

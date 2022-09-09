@@ -11,8 +11,8 @@ function Slideshow(props) {
 
   return (
     <section className='crew'>
-      <SlideControllers handleChange={handleChange} />
       <CrewCard crewMember={member} />
+      <SlideControllers handleChange={handleChange} />
     </section>
   );
 }
